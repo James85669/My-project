@@ -1,204 +1,238 @@
 /* Reset 基礎樣式 */
 body {
-    margin: 0;
-    font-family: 'Helvetica Neue', sans-serif;
-    color: #2d3748;
-    background-color: #ffffff;
-  }
-  
-  /* Header */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    background: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    
-  }
-  .header .logo img {
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-  }
-  .header img {
-    width: 110px;
-    height: 86px;
-    margin-right: 20px;
-  }
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #2d3748;
+  background-color: #ffffff;
+}
 
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #38a169;
-  }
-  .nav a {
-    margin-right: 1rem;
-    text-decoration: none;
-    color: #2d3748;
-  }
-  .nav a:hover {
-    color: #38a169;
-  }
-  .login-btn {
-    background-color: #38a169;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Hero */
-  .hero {
-    text-align: center;
-    padding: 5rem 1rem;
-    background: linear-gradient(to bottom, #ffffff, #f0fff4);
-  }
-  .hero h2 {
-    font-size: 2.5rem;
-    color: #38a169;
-  }
-  .announcement-btn {
-    display: inline-block;
-    background: #ffffff;
-    color: #38a169;
-    padding: 0.5rem 1rem;
-    border-radius: 9999px;
-    font-size: 0.875rem;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Chart Section */
-  .chart-section {
-    background: linear-gradient(to Top,#F9FFFA , #3DCE94 60%);
-    text-align: center;
-    padding: 5rem 1rem;
-  }
-  .chart-section p {
-    max-width: 40rem;
-    margin: 1rem auto;
-    font-size: 0.875rem;
-  }
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
+}
+
+.header .logo img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.header img {
+  width: 110px;
+  height: 86px;
+  margin-right: 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #38a169;
+}
+
+.nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #2d3748;
+}
+
+.nav a:hover {
+  color: #38a169;
+}
+
+.login-btn {
+  background-color: #38a169;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  background: linear-gradient(to bottom, #ffffff, #f0fff4);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #38a169;
+}
+
+.announcement-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #38a169;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Chart Section */
+.chart-section {
+  background: linear-gradient(to Top, #F9FFFA, #3DCE94 60%);
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.chart-section p {
+  max-width: 40rem;
+  margin: 1rem auto;
+  font-size: 0.875rem;
+}
+
+
+/* About */
+.about {
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.about h3 {
+  color: #38a169;
+}
+
+.about img {
+  margin: 1.5rem auto;
+  width: 6rem;
+}
+
+/* Nutritionists */
+.nutritionists {
+  display: flex;
+  justify-content: center;
+  background: #f7fafc;
+  padding: 5rem 1rem;
+  text-align: ;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  float: right;  /* 文字在右邊 */
+  width: 430px;
+  padding: 20px 20px 0px 0px;
+
+}
+
+.team .person img {
+  width: 500x;
+  margin: 50px auto;
+  border: solid 0;
+  overflow: hidden;
+  /* 避免長方框下面顯示不正常 */
   
-  /* About */
-  .about {
-    padding: 5rem 1rem;
-    text-align: center;
-  }
-  .about h3 {
-    color: #38a169;
-  }
-  .about img {
-    margin: 1.5rem auto;
-    width: 6rem;
-  }
-  
-  /* Nutritionists */
-  .nutritionists {
-    background: #f7fafc;
-    padding: 5rem 1rem;
-    text-align: center;
-  }
-  .team {
-    display: flex;
-    flex-direction: column;
-    max-width: 40rem;
-    margin: 0 auto;
-  
-  }
-  .team .person img {
-    border-width: 55px;
-    width: 10rem;
-    height: 12rem;
-  }
-  
-  /* Product */
-  .product {
-    padding: 5rem 1rem;
-    text-align: center;
-  }
-  .product-card {
-    max-width: 24rem;
-    margin: 0 auto;
-    background: white;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  
-  /* Knowledge */
-  .knowledge {
-    background: #f7fafc;
-    padding: 5rem 1rem;
-    text-align: center;
-  }
-  .articles {
-    max-width: 40rem;
-    margin: 0 auto;
-  }
-  .article {
-    background: white;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    margin-bottom: 1.5rem;
-  }
-  .article .title {
-    font-weight: bold;
-  }
-  
-  /* CTA */
-  .cta {
-    padding: 5rem 1rem;
-    text-align: center;
-  }
-  .join-btn {
-    background-color: #38a169;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 9999px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  /* Footer */
-  .footer {
-    background: #2d3748;
-    color: white;
-    padding: 3rem 1rem;
-  }
-  .footer-grid {
-    display: grid;
-    gap: 1.5rem;
-  }
-  .footer h4 {
-    font-weight: bold;
-  }
-  .footer ul {
-    list-style: none;
-    padding: 0;
-  }
-  .footer ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 0.875rem;
-  }
-  .footer ul li a:hover {
-    text-decoration: underline;
-  }
-  .footer-action {
-    text-align: center;
-  }
-  .footer .join-btn {
-    background-color: #48bb78;
-  }
-  .copyright {
-    text-align: center;
-    font-size: 0.75rem;
-    margin-top: 2rem;
-  }
-  
+}
+
+/* Product */
+.product {
+  padding: 5rem 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.product-card {
+  max-width: 24rem;
+  margin: 0 auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Knowledge */
+.knowledge {
+  background: #f7fafc;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.articles {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.article {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.article .title {
+  font-weight: bold;
+}
+
+/* CTA */
+.cta {
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.join-btn {
+  background-color: #38a169;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background: #2d3748;
+  color: white;
+  padding: 3rem 1rem;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.footer h4 {
+  font-weight: bold;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-action {
+  text-align: center;
+}
+
+.footer .join-btn {
+  background-color: #48bb78;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-top: 2rem;
+}
